@@ -1,0 +1,229 @@
+/* ---------------------css for small screen-------------- */
+
+@media only screen and (max-width: 1024px) {
+  /*! -----------------------------FRONT-SECTION-------------------------- */
+
+  .logo img{
+        width: 90%;
+    }
+
+  .front-section {
+    flex-wrap: wrap-reverse;
+  }
+
+
+  .frontimg img {
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+  }
+
+  .leftside h1 {
+    font-size: 30px;
+  }
+
+  #p1 {
+    font-size: x-large;
+  }
+
+  #p2 {
+    font-size: unset;
+  }
+
+
+  #timeline .heading {
+    font-size: 28px;
+  }
+
+  .sub-title {
+    font-size: 45px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  /*! lines */
+
+  .line2 {
+    top: -53px;
+  }
+
+  .line3 {
+    top: 20px;
+  }
+
+  .line4 {
+    top: 16px;
+  }
+
+  .lang {
+    gap: 50px;
+  }
+
+  .contact-right form {
+    margin-top: 20px;
+  }
+
+  /** -----------------------------ABOUT SECTION-------------------------- */
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+
+  .about-col-2 {
+    font-size: 14px;
+  }
+
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  /*! -----------------------------TIMELINE SECTION-------------------------- */
+
+  .container-2 {
+    width: 85%;
+    transform: translateX(15px);
+  }
+  .container-2 ul::after {
+    left: -30px;
+  }
+  .container-2 ul li {
+    width: 100%;
+    float: none;
+    clear: none;
+    margin-bottom: 80px;
+  }
+  .container-2 ul li:nth-child(odd) {
+    text-align: left;
+    transform: translateX(0);
+  }
+  .container-2 ul li:nth-child(odd) .date {
+    left: 20px;
+  }
+  .container-2 ul li:nth-child(odd) .circle {
+    left: -30px;
+    transform: translate(-50%, -50%);
+  }
+  .container-2 ul li:nth-child(even) {
+    transform: translateX(0);
+  }
+}
+
+/*! ---------------------navigation bar----------------------- */
+
+
+@media (max-width: 992px) {
+
+  main {
+    padding-inline: 0px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+
+  section,#about,#pro,#hero{
+    padding-inline: 40px;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+  }
+
+  header {
+    padding: 1.3rem 5%;
+    margin-top: 0px;
+  }
+
+  .c-card {
+    width: fit-content;
+    padding: 0px;
+  }
+
+  .menu {
+    font-size: 35px;
+    position: absolute;
+    right: 24px;
+    display: inline-flex;
+  }
+
+  #close {
+    position: inherit;
+    right: 24px;
+  }
+
+  #close:checked ~ .menu #menu-ic {
+    display: none;
+  }
+
+  #close:checked ~ .menu #close-ic {
+    display: block;
+  }
+
+  #close-ic {
+    display: none;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 0px 0px 50px 50px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    padding: 0px;
+  }
+
+  #close:checked ~ nav {
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  nav ul li a {
+    padding: 15px 10px;
+    font-size: 18px;
+    }
+}

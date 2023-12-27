@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicky's Portfolio Website </title>
+    <!-- ***********style file************* -->
+    
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="stylesheet" href="./style/responsive.css">
+    
+    <link rel="shortcut icon" href="./image/fevicon2.png" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/0b7a17eedf.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  
+</head>
+
+<body>
+
+<!--! ***********Main container*************** -->
+<main>
+
+<!--? -------Navigation bar ------- -->
+<header>
+            <div class="logo">
+                <img src="./image/logo.png"alt="logo not found">
+            </div>
+
+            <!-- menu bar -->
+            <input type="checkbox" id="close">
+            <label for="close" class="menu">
+                <i class="fa-solid fa-bars-staggered"id="menu-ic"></i>
+                <i class="fa-solid fa-x"id="close-ic"></i>
+            </label>
+
+                <nav>
+                  <ul>
+                    <!-- ! Home -->
+                    <li>
+                      <a href="#"class="active">
+                        <span class="iconss "
+                          ><i class="fa-solid fa-house fa-beat"></i></span>
+                        <span class="texts ">Home</span>
+                      </a>
+                    </li>
+                    <!-- ! About -->
+                    <li>
+                      <a href="#about">
+                        <span class="iconss"
+                          ><i class="fa-solid fa-address-card"></i></span>
+                        <span class="texts">About</span>
+                      </a>
+                    </li>
+                    <!-- ! Education -->
+                    <li>
+                      <a href="#timeline">
+                        <span class="iconss"
+                          ><i class="fa-solid fa-user-graduate"></i></span>
+                        <span class="texts">Education</span>
+                      </a>
+                    </li>
+                    <!-- ! Projects -->
+                    <li>
+                      <a href="#pro">
+                        <span class="iconss"
+                          ><i class="fa-solid fa-laptop-code"></i></span>
+                        <span class="texts">Projects</span>
+                      </a>
+                    </li>
+                    <!-- ! contact -->
+                    <li>
+                      <a href="#contact">
+                        <span class="iconss"
+                          ><i class="fa-solid fa-message"></i></span>
+                        <span class="texts">Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+            <!--? -------Theme Mode------- -->
+
+            <div class="c-card">
+                <button class="c-theme" id="themePicker"></button>
+                <div class="c-theme-grid" id="themeGrid"></div>
+            </div>
+
+</header>
+
+<!--* --------------Front Sections-------------------- -->
+<section class="front-section">
+
+            <div class="leftside">
+                    <h1>Hello!, I'm <span>Vicky</span></h1>
+                    <p id="p1"><span class="role"></span></p>
+                    <p id="p2">
+                        I'm Vicky , a pre Final year student pursuing bachelors in computer
+                        science and engineering with specialisation in artifical
+                        intelligence and machine learning and I believe in "face the
+                        failure, until the failure fails to face you".
+                    </p>
+
+                    <!-- <div class="btn">
+                      <a id="cv" href="./image/Resume.pdf" download target="_blank">Download CV <i class="fa-solid fa-download fa-beat"></i></a>
+                    </div> -->
+                    
+                    <!--! -------front section icons------ -->
+
+                    <div class="icons">
+                        <ul>
+                          <li class="ic in">
+                            <span class="tooltip">Linkedin</span>
+                            <span class="icc"><a href="https://www.linkedin.com/in/vicky-369194221/" target="_blank"><img src="./image/linkdin.png" alt=""></a></a></span>
+                          </li>
+                  
+                          <li class="ic ins">
+                            <span class="tooltip">Instragram</span>
+                            <span class="icc"><a href="https://www.instagram.com/_.vi.cky_/" target="_blank"><img src="./image/instragram.png" alt=""></a></a></span>
+                          </li>
+                  
+                          <li class="ic git">
+                            <span class="tooltip">Github</span>
+                            <span class="icc"><a href="https://github.com/vicky2742" target="_blank"><img src="./image/git.png" alt=""></a></a></span>
+                          </li>
+                  
+                          <li class="ic git">
+                            <span class="tooltip">Discord</span>
+                            <span class="icc"><a href="https://discord.com/invite/zs8tjUHQ" target="_blank"><img src="./image/discord.svg" alt=""></a></a></span>
+                          </li>
+                        </ul>
+                    </div>
+            </div>
+
+            <!--? -------front section bg-image------ -->
+
+            <div class="frontimg">
+                <img src="./image/front-bg.png" alt="">
+            </div>
+
+</section>
+<div class="line"></div>
+
+<!--! --------------About Sections-------------------- -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="./image/bg-2.jpg" alt="image not found" />
+        <!-- <img src="./assests/user.png" alt="image not found" /> -->
+      </div>
+      <div class="about-col-2">
+        <h2 class="sub-title">About Me</h2>
+        <p>
+          An enthusiastic fresher with highly motivated and leadership
+          skills having bachelors of engineering degree in Computer Science
+          & Engineering at SRMIST Delhi-NCR Campus, Ghaziabad. Highly
+          motivated and eager to learn new things. Always willing to
+          innovate the new things which can improve the existing technology.
+          I am passionate about Front-End Web Development. Also interested
+          in Full Stack Web Development.
+        </p>
+        <h3>My Career Objective :</h3>
+        <p>
+          To obtain a creative and challenging position in an organization
+          that gives me an opportunity for self improvement and leadership,
+          while contributing to the symbolic growth of the organization with
+          my technical, innovative and creative skills.
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skill')">
+            Skills
+          </p>
+          <p class="tab-links" onclick="opentab('experience')">
+            Experience
+          </p>
+          <!-- <p class="tab-links" onclick="opentab('education')">Education</p> -->
+        </div>
+        <div class="tab-contents active-tab" id="skill">
+          <ul>
+            <li>
+              <span>Programming Language :</span><br />Java , C , C++
+            </li>
+            <li>
+              <span>Web Development :</span><br />Html , Css , JavaScript
+            </li>
+            <li><span>Others :</span><br />DSA , OOPS ,Git & Github</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>--</span><br />updating soon.....</li>
+            <li><span>--</span><br />updating soon.....</li>
+            <li><span>--</span><br />updating soon.....</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<div class="line2"></div>
+
+<!--* --------------Education Timeline Sections-------------------- -->
+<section id="timeline">
+  <h3 class="heading">Education Timeline</h3>
+
+  <div class="container-2">
+    <ul>
+      <li>
+        <h3 class="title">College</h3>
+        <p>
+          I am pursuing Computer Science and Engineering with specialization
+          in Artificial Intelligence and Machine Learning at SRM Institute
+          of Science and Technology.
+        </p>
+
+        <span class="circle"></span>
+        <span class="date">September 2021</span>
+      </li>
+      <li>
+        <h3 class="title">Intermediate</h3>
+        <p>
+          I have completed my Intermediate from Ramjas Senior Secondary
+          School, Karol Bagh, Delhi, CBSE Board.
+        </p>
+
+        <span class="circle"></span>
+        <span class="date">July 2020</span>
+      </li>
+      <li>
+        <h3 class="title">High school</h3>
+        <p>
+          I have completed my High School from Ramjas Senior Secondary
+          School, Karol Bagh, Delhi, CBSE Board.
+        </p>
+
+        <span class="circle"></span>
+        <span class="date">May 2018</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!--? --------------Skills Sections-------------------- -->
+<section id="hero">
+  <h3 class="heading-1">My Skills</h3>
+  <div class="lang">
+    <!--! HTML -->
+    <div class="skills">
+        <div class="content">
+        <span>90%</span>
+        <span>HTML</span>
+        </div>
+    </div>
+    <!--? CSS -->
+    <div class="skills">
+        <div class="content">
+        <span>85%</span>
+        <span>CSS</span>
+        </div>
+    </div>
+    <!--* JAVASCRIPT -->
+    <div class="skills">
+        <div class="content">
+        <span>65%</span>
+        <span>JAVASCRIPT</span>
+        </div>
+    </div>
+   
+  
+</div>
+</section>
+<div class="line3"></div>
+
+<!--! --------------Projects Sections-------------------- -->
+<section class=" projects "id="pro">
+  <div class=" projects ">
+  <h3 class="heading-2">Projects</h3>
+  <div class="parent">
+    <div class="card">
+      <div class="content-box">
+        <h1 class="card-title">Netflix Clone</h1>
+        <p class="card-content">
+          Netflix is a media-streaming and video-rental company that offers a wide range of TV shows, movies, documentaries, and original programming. 
+        </p>
+        <span class="see-more"><a href="#"><box-icon name='link-external' animation='tada' flip='vertical' style="fill: rgb(251, 251, 251)" ></box-icon></a></span>
+      </div>
+      <div class="date-box">
+        <img src="./image/netflix clone.jpg" alt="">
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="parent card2">
+    <div class="card">
+      <div class="content-box">
+        <h1 class="card-title">Clone Website</h1>
+        <p class="card-content">
+          UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users.
+        </p>
+        <span class="see-more"><a href="https://github.com/vicky2742/clone-website"target="_blank"><box-icon name='link-external' animation='tada' flip='vertical' style="fill: rgb(251, 251, 251)" ></box-icon></a></span>
+      </div>
+      <div class="date-box">
+        <img src="./image/clone website.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="parent card3">
+    <div class="card">
+      <div class="content-box">
+        <h1 class="card-title">Memory Game</h1>
+        <p class="card-content">
+          Memory games are games that help improve memory and concentration. There are many types of memory games such as concentration and so on.
+        </p>
+        <span class="see-more"><a href="https://github.com/vicky2742/Memory-Game" target="_blank"><box-icon name='link-external' animation='tada' flip='vertical' style="fill: rgb(251, 251, 251)" ></box-icon></a></span>
+      </div>
+      <div class="date-box">
+        <img src="./image/memory game.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="parent card4">
+    <div class="card">
+      <div class="content-box">
+        <h1 class="card-title">Portfolio</h1>
+        <p class="card-content">
+          A portfolio site is an extension of a freelancer’s (or company’s) résumé. It provides a convenient way for potential clients to view your work.
+        </p>
+        <span class="see-more"><a href="https://github.com/vicky2742/My-Personal-Portfolio-"target="_blank"><box-icon name='link-external' animation='tada' flip='vertical' style="fill: rgb(251, 251, 251)" ></box-icon></a></span>
+      </div>
+      <div class="date-box">
+        <img src="./image/portfolio.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="parent card5">
+    <div class="card">
+      <div class="content-box">
+        <h1 class="card-title">Todolist</h1>
+        <p class="card-content">
+          You can use Todoist to organize your tasks by creating projects and sub-projects. You can also add labels and filters to your tasks.
+        </p>
+        <span class="see-more"><a href="https://github.com/vicky2742/Todo-List" target="_blank"><box-icon name='link-external' animation='tada' flip='vertical' style="fill: rgb(251, 251, 251)" ></box-icon></a></span>
+      </div>
+      <div class="date-box">
+        <img src="./image/todo list.png" alt="">
+      </div>
+    </div>
+    
+  </div>
+   </div>
+  
+  <div class="btn">
+    <a href="./error page/index.html"target="_blank">See More <i class="fa-regular fa-hand-point-right fa-bounce"></i></a>
+  </div>
+ 
+</section>
+<div class="line4"></div>
+
+<!--* --------------Contact Sections-------------------- -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h3 class="sub-title">Contact Me!</h3>
+        <p><i class="fa-solid fa-envelope fa-bounce"></i>vickyjmh5@gmail.com</p>
+        <p><i class="fa-solid fa-phone fa-bounce"></i>+91 8700038160</p>
+
+        <!--! footer-icons -->
+        <div class="social-icons home-icon flex">
+          <a
+          href="https://www.linkedin.com/in/vicky-369194221/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in fa-fade"></i></a>
+          <a href="https://github.com/vicky2742" target="_blank"
+            ><i class="fa-brands fa-github-alt fa-fade"></i></a>
+          <a href="https://www.instagram.com/_.vi.cky_/" target="_blank"
+            ><i class="fa-brands fa-instagram fa-fade"></i></a>
+          <a href="https://discord.com/invite/zs8tjUHQ" target="_blank"
+            ><i class="fa-brands fa-discord fa-fade"></i></a>
+        </div>
+
+        <div class="btn">
+          <a id="cv" href="./image/college resume.pdf" download target="_blank">Download CV <i class="fa-solid fa-download fa-beat"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form
+          action="https://formsubmit.co/20d6ddc931a958ab250a279a5e2dd528"
+          target="_blank"
+          method="POST"
+        >
+          <!-- honeypot -->
+          <input type="text" name="_honey" style="display: none" />
+          <!-- disable captcha -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <input
+            type="hidden"
+            name="_next"
+            value="https://vicky2742.github.io/My-Personal-Portfolio-/success.html"
+          />
+
+          <input
+            type="hidden"
+            name="_next"
+            value="https://vicky2742.github.io/My-Personal-Portfolio-/success.html"
+          />
+
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Your Email"
+            required
+          />
+          <input
+            type="phone"
+            name="Number"
+            placeholder="Phone Number"
+            required
+          />
+          <textarea
+            name="Message"
+            rows="6"
+            placeholder="Your Message"
+          ></textarea>
+          <button type="submit" class="btn">
+            <i class="fa-solid fa-paper-plane v"></i>Send
+          </button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="line5"></div>
+
+<!--! --------------Footer Sections-------------------- -->
+<footer class="copyright">
+      <p>An enthusiastic Future Developer. <i class="fa-solid fa-heart"></i></p>
+      <p>Copyright © 2024 Vicky. All rights reserved</p>
+</footer>
+
+</main>   
+<!--! **********main conatiner end*********** -->
+
+<!--* ------------------Scripts Files ----------------- -->
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
