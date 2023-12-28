@@ -4,7 +4,7 @@ A portfolio site is an extension of a freelancer’s (or company’s) résumé. 
 
 <h3>Preview:-</h3>
 
-Link to this page: https://pikwy.com/web/658c5ae500f65170f8057388
+Link to this page: https://vicky2742.github.io/Portfolio-/
 
 
 <img src="./image/preview.jpg">
