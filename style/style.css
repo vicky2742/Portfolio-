@@ -280,13 +280,15 @@ nav ul li a.active {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  bottom: 60px;
+  bottom: 30px;
 }
 
 .leftside {
   text-align: start;
   flex-direction: column;
   padding: 20px;
+  position: relative;
+  bottom: 30px;
 }
 
 .leftside h1 {
