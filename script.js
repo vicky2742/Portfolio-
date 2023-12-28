@@ -22,6 +22,23 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
+//hidden class
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } 
+    else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+
 //THEME
 
 const themes = ["dark", "sunset", "sunrise", "light"];
@@ -175,5 +192,3 @@ themes.forEach((theme, i) => {
 });
 
 changeTheme(themes[0]);
-
-

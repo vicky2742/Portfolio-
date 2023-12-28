@@ -8,6 +8,25 @@
   scroll-behavior: smooth;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 :root {
   --dark-bg: #101214;
   --dark-border: #22272b;
@@ -259,6 +278,9 @@ nav ul li a.active {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
+  position: relative;
+  bottom: 60px;
 }
 
 .leftside {
@@ -439,7 +461,7 @@ ul .ic:hover .tooltip {
   height: 2px;
   background-color: var(--text-secondary);
   position: relative;
-  top: 35px;
+  /* top: 35px; */
   z-index: 2;
 }
 
@@ -462,6 +484,7 @@ ul .ic:hover .tooltip {
   height: 2px;
   background-color: var(--text-secondary);
   position: relative;
+  top: 30px;
   z-index: 2;
 }
 
@@ -481,6 +504,7 @@ ul .ic:hover .tooltip {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 1px;
+  min-height: 100vh;
 }
 
 .row {
@@ -488,6 +512,7 @@ ul .ic:hover .tooltip {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 30px 0px;
+  min-height: 100vh;
 }
 
 .about-col-1 {
@@ -563,6 +588,7 @@ ul .ic:hover .tooltip {
   font-family: poppins;
   display: grid;
   place-items: center;
+  min-height: 100vh;
 }
 
 #timeline .heading {
@@ -715,6 +741,7 @@ ul li .date {
 
 #hero {
   width: 100%;
+  /* min-height: 100vh; */
   height: auto;
   font-family: poppins;
   padding: 50px 0;
@@ -914,7 +941,9 @@ ul li .date {
   justify-content: center;
   align-items: center;
 }
-
+.btn1 {
+  margin-top: -18px;
+}
 .see-more a {
   text-decoration: none;
   background: rgb(0, 136, 255);
@@ -971,6 +1000,10 @@ ul li .date {
 
 /*! ----------------Contact Section------------------ */
 
+#contact {
+  /* min-height: 100vh; */
+  margin-top: 50px;
+}
 .contact-left {
   flex-basis: 35%;
 }
@@ -1083,5 +1116,3 @@ form textarea {
 .copyright i {
   color: #ff004f;
 }
-
-
